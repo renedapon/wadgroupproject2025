@@ -1,46 +1,51 @@
 * {
     font-family: sans-serif;
     box-sizing: border-box;
-    
-}
-
-
-.header {
-    padding-top: .2em;
-    padding-bottom: .2em;
-    background-color: gray;
-    border: 1px gray;
-    border-radius: 10px;
-    box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.5);
-    position: sticky;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
+  }
+body {
+    line-height: 1.6;
+    margin: 0;
+    background: #f4f4f4;
+    color: black;
 }
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    
 }
-
+.header {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  padding: 10px 15px;
+  border: 1px solid black;
+  background-color: gray;
+  border-radius: 10px;
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
+}
+.logo {
+  margin: 0;
+  font-size: 1.1em;
+}
 .nav {
-    margin-top: 5px;
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
 }
-
 .nav a {
-    padding: 10px 15px;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-    color: black;
-    font-size: .99em;
-    text-decoration: none;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: black;
+  font-size: .99em;
+}
+.nav a:hover {
+  background-color: #7ebeb6;
 }
 
 .card {
-    max-width: 600px;       /* suurimal ekraanil kuni 600px lai */
+    max-width: 600px;     
     margin: 5% auto;
     background: #ececec;
     padding: 5%;
@@ -51,10 +56,10 @@ ul {
   .card form {
     display: flex;
     flex-direction: column;
-    gap: 20px;              /* vahe ridade vahel */
+    gap: 20px;              
   }
   
-  /* RIDA – vaikimisi horisontaalne (desktop) */
+ 
   .row {
     display: flex;
     align-items: center;
@@ -62,17 +67,17 @@ ul {
     gap: 15px;
   }
   
-  /* SILT */
+  
   label {
     font-weight: bold;
-    min-width: 120px;       /* annab siltidele ühtlase laiuse */
+    min-width: 120px;       
     text-align: right;
   }
   
-  /* VÄLJAD */
+
   textarea,
   input[type="file"] {
-    flex: 1;                /* võtab kogu vaba laiuse */
+    flex: 1;                
     padding: 8px;
     border-radius: 4px;
     font: inherit;
@@ -83,7 +88,7 @@ ul {
     resize: vertical;
   }
   
-  /* NUPP */
+
   .btn {
     background: #1a4f8b;
     color: #fff;
@@ -98,11 +103,11 @@ ul {
     background: #163f6f;
   }
   
-  /* ---- MOBIILI VAATEKS ---- */
+
   @media (max-width: 600px) {
     .row {
-      flex-direction: column;     /* silt läheb välja kohale */
-      align-items: stretch;       /* täislaiuses väljad */
+      flex-direction: column;     
+      align-items: stretch;      
     }
   
     label {
@@ -114,5 +119,61 @@ ul {
     textarea,
     input[type="file"] {
       width: 100%;
+  }
+}
+  .nav a:hover {
+    background-color: #7ebeb6;
+  }
+  
+.posts {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 0 15px;
+    color: black;
+  }
+.post {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+.date {
+    font-size: 0.9em;
+  }
+.post-content p {
+    margin: 0;
+    font-size: 1em;
+    line-height: 1.5;
+  }
+  .post-content img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  @media (min-width: 800px) {
+    .header {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav {
+      flex-direction: row;
+    }
+    .nav a {
+      display: inline-block;
     }
   }
