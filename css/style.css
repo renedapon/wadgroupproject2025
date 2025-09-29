@@ -12,7 +12,7 @@
     border: 1px gray;
     border-radius: 10px;
     box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.5);
-    position: fixed;
+    position: sticky;
     width: 100%;
     flex-direction: row;
     justify-content: space-between;
@@ -38,3 +38,81 @@ ul {
     font-size: .99em;
     text-decoration: none;
 }
+
+.card {
+    max-width: 600px;       /* suurimal ekraanil kuni 600px lai */
+    margin: 5% auto;
+    background: #ececec;
+    padding: 5%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  }
+  
+  .card form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;              /* vahe ridade vahel */
+  }
+  
+  /* RIDA – vaikimisi horisontaalne (desktop) */
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+  }
+  
+  /* SILT */
+  label {
+    font-weight: bold;
+    min-width: 120px;       /* annab siltidele ühtlase laiuse */
+    text-align: right;
+  }
+  
+  /* VÄLJAD */
+  textarea,
+  input[type="file"] {
+    flex: 1;                /* võtab kogu vaba laiuse */
+    padding: 8px;
+    border-radius: 4px;
+    font: inherit;
+  }
+  
+  textarea {
+    min-height: 100px;
+    resize: vertical;
+  }
+  
+  /* NUPP */
+  .btn {
+    background: #1a4f8b;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    align-self: center;
+  }
+  
+  .btn:hover {
+    background: #163f6f;
+  }
+  
+  /* ---- MOBIILI VAATEKS ---- */
+  @media (max-width: 600px) {
+    .row {
+      flex-direction: column;     /* silt läheb välja kohale */
+      align-items: stretch;       /* täislaiuses väljad */
+    }
+  
+    label {
+      text-align: left;
+      min-width: auto;
+      width: 100%;
+    }
+  
+    textarea,
+    input[type="file"] {
+      width: 100%;
+    }
+  }
