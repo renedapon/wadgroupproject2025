@@ -23,7 +23,8 @@ ul {
   border-radius: 10px;
   box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
 }
-.logo {
+
+#logo {
   margin: 0;
   font-size: 1.1em;
 }
@@ -53,10 +54,9 @@ ul {
     box-shadow: 0 0 10px rgba(0,0,0,0.15);
   }
   
-  .card form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;              
+  .card > form {
+     display: flex; 
+     flex-direction: column; 
   }
   
  
@@ -138,6 +138,18 @@ ul {
     padding: 15px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   }
+  .post + .post {
+    margin-top: 40px; 
+    border-top: 2px dashed #aaa;
+  }
+
+  .post ~ .post {
+    border-top: 2px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    padding-top: 20px;
+  }
+
+
 .post-header {
     display: flex;
     justify-content: space-between;
