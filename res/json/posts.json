@@ -1,0 +1,61 @@
+[
+  {
+    "id": 1,
+    "author": "Karl Markus Kiudma",
+    "date": "Oct 2, 2022",
+    "profile-image": "res/images/me.png",
+    "image": "res/images/tartu.png",
+    "title": "Authmn in Tartu",
+    "text": "Tartu is very beutiful in authmn!",
+    "location": "Tartu, Estonia",
+    "likes": "25",
+    "tags": ["Tartu", "Authmn"]
+  },
+  {
+    "id": 2,
+    "author": "Rene Dapon",
+    "date": "Nov 5, 2022",
+    "profile-image": "res/images/me.png",
+    "image": "res/images/lake.png",
+    "title": "Relaxing by the Lake",
+    "text": "Spent the afternoon by Peipsi lake. Perfect weather and calm water.",
+    "location": "Peipsi, Estonia",
+    "likes": "42",
+    "tags": ["Lake", "Nature", "Relax"]
+  },
+  {
+    "id": 3,
+    "author": "Tregert Gustav Värv",
+    "date": "Dec 1, 2022",
+    "profile-image": "res/images/me.png",
+    "image": "res/images/snow.png",
+    "title": "First Snow!",
+    "text": "First snow has fallen and the city looks magical!",
+    "location": "Tallinn, Estonia",
+    "likes": "67",
+    "tags": ["Winter", "Snow", "Tallinn"]
+  },
+  {
+    "id": 4,
+    "author": "Rene Dapon",
+    "date": "Mar 15, 2023",
+    "profile-image": "res/images/me.png",
+    "image": "res/images/friends.png",
+    "title": "Weekend with Friends",
+    "text": "Had a great time hiking with my best friends. Fresh air and laughter!",
+    "location": "Otepää, Estonia",
+    "likes": "58",
+    "tags": ["Friends", "Hiking", "Weekend"]
+  },
+  {
+    "id": 5,
+    "author": "Karl Markus Kiudma",
+    "date": "Jun 24, 2023",
+    "profile-image": "res/images/me.png",
+    "title": "Cool Posts",
+    "text": "These are some really cool posts worth checking out!",
+    "location": "Online",
+    "likes": "84",
+    "tags": ["Cool", "Posts", "Trending"]
+  }
+]
