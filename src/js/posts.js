@@ -26,11 +26,11 @@ window.onload = function() {
                 profileImg.alt = "Profile";
 
 
-                let authorName = document.createElement("strong");
+                let authorName = document.createElement("p");
                 authorName.className = "author-name";
                 authorName.innerText = json[i].author;
 
-                let dateSpan = document.createElement("time");
+                let dateSpan = document.createElement("p");
                 dateSpan.className = "date";
                 dateSpan.innerText = json[i].date;
 
@@ -60,16 +60,24 @@ window.onload = function() {
                 postContent.appendChild(text);
 
 
-                let info = document.createElement("p");
-                info.className = "info";
-                info.innerText = `📍 ${json[i].location} | 👍 ${json[i].likes} likes`;
-                postContent.appendChild(info);
+                let location = document.createElement("p");
+                location.className = "info";
+                location.innerText = `📍 ${json[i].location}`;
+                postContent.appendChild(location);
+
+                let likes = document.createElement("p");
+                likes.className = "info";
+                likes.innerText = `👍 ${json[i].likes} likes`;
+                postContent.appendChild(likes);
 
 
                 if (json[i].tags && json[i].tags.length > 0) {
-                    let tags = document.createElement("p");
+                    let tags = document.createElement("strong");
                     tags.className = "tags";
-                    tags.innerText = "Tags: " + json[i].tags.join(", ");
+                    for (let j = 0; j < json[i].tags.length; j++) {
+                        json[i].tags[j] = "#" + json[i].tags[j]
+                    }
+                    tags.innerText = json[i].tags.join(" ");
                     postContent.appendChild(tags);
                 }
 
