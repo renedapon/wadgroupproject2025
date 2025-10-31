@@ -1,8 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    if (localStorage.getItem("user")) {
-      window.location.href = "index.html";
-      return;
-    }
   
     const form = document.getElementById("loginForm");
     if (!form) return;
