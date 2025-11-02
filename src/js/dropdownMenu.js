@@ -5,8 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
       style.id = 'dropdown-style';
       style.textContent = `
         .profile-wrapper { position: relative; display: inline-block; }
-        .profile-pic { cursor: pointer; border-radius: 50%; transition: transform 0.1s ease; }
-        .profile-pic:hover { transform: scale(1.05); }
+        .profile-pic { cursor: pointer; border-radius: 10%; transition: transform 0.1s ease;object-fit: cover; }        .profile-pic:hover { transform: scale(1.05); }
         .dropdown {
           position: absolute; top: 55px; right: 0;
           background: #fff; border: 1px solid #ccc; border-radius: 8px;
