@@ -57,5 +57,69 @@
     "location": "Online",
     "likes": "84",
     "tags": ["Cool", "Posts", "Trending"]
+  },
+  {
+    "id": 6,
+    "author": "Tregert Gustav Värv",
+    "date": "Apr 15, 2024",
+    "profile-image": "res/images/me.png",
+    "image": "res/images/meenikunno.png",
+    "title": "Morning walk in Meenikunno bog",
+    "text": "A peaceful day surrounded by nature. Meenikunno bog never disappoints — sunshine, silence and pure Estonian beauty.",
+    "location": "Meenikunno, Estonia",
+    "likes": "61",
+    "tags": ["Meenikunno", "Hike", "Nature", "Estonia"]
+  },
+  {
+    "id": 7,
+    "author": "Karl Markus Kiudma",
+    "date": "May 22, 2024",
+    "profile-image": "res/images/me.png",
+    "image": "res/images/discgolf.png",
+    "title": "Weekend disc golf round",
+    "text": "Tried out a new disc golf course this weekend — great weather, challenging fairways and a few birdies too!",
+    "location": "Elva, Estonia",
+    "likes": "79",
+    "tags": ["Discgolf", "Sports", "Weekend", "Elva"]
+  },
+  {
+    "id": 8,
+    "author": "Rene Dapon",
+    "date": "Jul 13, 2024",
+    "profile-image": "res/images/me.png",
+    "image": "res/images/beachgrind.png",
+    "title": "Beach Grind Festival",
+    "text": "Unreal energy at Beach Grind this summer — fire shows, loud music and thousands of people having the time of their lives!",
+    "location": "Pärnu, Estonia",
+    "likes": "115",
+    "tags": ["Festival", "BeachGrind", "Summer", "Music"]
+  },
+  {
+    "id": 9,
+    "author": "Tregert Gustav Värv",
+    "date": "May 18, 2025",
+    "profile-image": "res/images/me.png",
+    "image": "res/images/everest.png",
+    "title": "Climbing new heights",
+    "text": "Reaching the top isn’t just about the view — it’s about every step, every challenge, and every moment you kept going.",
+    "location": "Mount Everest",
+    "likes": "121",
+    "tags": ["Adventure", "Mountains", "Challenge", "Travel"]
+  },
+
+
+  {
+    "id": 10,
+    "author": "Karl Markus Kiudma",
+    "date": "Apr 12, 2025",
+    "profile-image": "res/images/me.png",
+    "image": "res/images/codingnight.png",
+    "title": "Focus mode",
+    "text": "Coding through the night with coffee, headphones and pure concentration — when the world is quiet, code just flows.",
+    "location": "Tartu, Estonia",
+    "likes": "64",
+    "tags": ["Coding", "Night", "Focus", "Programming"]
   }
+
+
 ]

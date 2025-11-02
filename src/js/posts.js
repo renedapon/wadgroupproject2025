@@ -21,8 +21,6 @@ window.onload = function() {
                 let profileImg = document.createElement("img");
                 profileImg.className = "profile-pic";
                 profileImg.src = json[i]["profile-image"];
-                profileImg.width = 50;
-                profileImg.height = 50;
                 profileImg.alt = "Profile";
 
 
@@ -34,9 +32,14 @@ window.onload = function() {
                 dateSpan.className = "date";
                 dateSpan.innerText = json[i].date;
 
-                postHeader.appendChild(profileImg);
-                postHeader.appendChild(authorName);
+                let authorInfo = document.createElement("div");
+                authorInfo.className = "author-info";
+                authorInfo.appendChild(profileImg);
+                authorInfo.appendChild(authorName);
+
+                postHeader.appendChild(authorInfo);
                 postHeader.appendChild(dateSpan);
+
 
 
                 let postContent = document.createElement("div");
@@ -45,8 +48,6 @@ window.onload = function() {
                 if (json[i].image) {
                     let img = document.createElement("img");
                     img.src = json[i].image;
-                    img.width = 300;
-                    img.height = 200;
                     img.alt = json[i].title;
                     postContent.appendChild(img);
                 }
