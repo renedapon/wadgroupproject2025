@@ -5,7 +5,6 @@ window.onload = function() {
         .then(json => {
             console.log(json);
 
-        
             let postsContainer = document.createElement("div");
             postsContainer.className = "posts";
             document.body.appendChild(postsContainer);
