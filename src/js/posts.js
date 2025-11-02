@@ -19,7 +19,7 @@ window.onload = function() {
                 postHeader.className = 'post-header';
 
                 let profileImg = document.createElement("img");
-                profileImg.className = "profile-pic";
+                profileImg.className = "profile-picture";
                 profileImg.src = json[i]["profile-image"];
                 profileImg.alt = "Profile";
 
